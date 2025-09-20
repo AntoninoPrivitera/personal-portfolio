@@ -33,9 +33,8 @@ const Footer = () => (
             </a>
           ))}
         </div>
-
+        {/* 
         <div className="grid grid-cols-2">
-          {/* styles is a prop */}
           <a href={resumeLink} target="_blank">
             <Button styles="mt-10 mr-3 inline-flex items-center justify-center" text="Resume" icon={AiFillGithub} />
           </a>
@@ -47,19 +46,20 @@ const Footer = () => (
             />
           </a>
         </div>
+        */}
       </div>
 
       <div className="md:ml-auto mt-10 md:mt-0">
         <img
           src={profilePic}
-          alt="Parth Mittal"
+          alt="Concetto Antonino Privitera"
           className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
         />
       </div>
     </div>
     <div className="text-center font-poppins font-normal text-dimWhite text-xs sm:text-sm pb-4">
       <p>
-        Made with 💙 by Parth Mittal & the Open Source Community
+        Made with 💙 by Parth Mittal & the Open Source Community, customized by Concetto Antonino Privitera.
       </p>
     </div>
   </footer>

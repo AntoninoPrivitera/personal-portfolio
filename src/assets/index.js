@@ -1,4 +1,4 @@
-import parthmittal from "./parth.svg";
+import profile_logo from "./profile_logo.png";
 import profilePic from "./profile-pic.jpg";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -36,6 +36,23 @@ import khoj from "./khoj.jpg";
 import kosh from "./kosh.png";
 import polkadot_dev_cli from "./polkadot-dev-cli.png";
 
+// Experience Logos
+import criteo from "./experience_logos/criteo_logo.jpg";
+import head_of_design from "./experience_logos/head_of_design_logo.jpg";
+import stmicroelectronics from "./experience_logos/stmicroelectronics_logo.jpg";
+
+// Education Logos
+import ensimag from "./education_logos/ensimag_logo.jpg";
+import polito from "./education_logos/politecnico_di_torino_logo.jpg";
+import unict from "./education_logos/university_of_catania_logo.jpg";
+
+// Projects
+import jira_task_flow_visualizer from "./projects/jira_task_flow_visualizer.webp";
+import sky_rivon from "./projects/skyrivon.png";
+import sudoku_solver from "./projects/sudoku_solver.png";
+import event_flow_visualization_platform from "./projects/event_flow_visualization_platform.jpg";
+import physics_simulator from "./projects/physics_simulator.jpg";
+
 export {
   menu,
   close,
@@ -49,7 +66,7 @@ export {
   genesis,
   portfolio,
   cdc,
-  parthmittal,
+  profile_logo,
   profilePic,
   chargeswap,
   placeicon,
@@ -73,5 +90,16 @@ export {
   khoj,
   kosh,
   polkadot_dev_cli,
-  placeholder
+  placeholder,
+  criteo,
+  head_of_design,
+  stmicroelectronics,
+  ensimag,
+  polito,
+  unict,
+  jira_task_flow_visualizer,
+  sky_rivon,
+  sudoku_solver,
+  event_flow_visualization_platform,
+  physics_simulator
 };

@@ -207,7 +207,7 @@ def convert_projects_csv_to_js(input_dir=None, output_file=None):
     content:
       "{entry["content"]}",
     stack: [
-{",\n".join(stack_items)}
+{",".join(stack_items)}
     ],
   }}"""
         js_entries.append(js_entry)
@@ -334,7 +334,7 @@ def convert_volunteering_csv_to_js(input_dir=None, output_file=None):
     title: "{entry["title"]}",
     duration: "{entry["duration"]}",
     content: [
-{",\n".join(content_items)}
+{",".join(content_items)}
     ],
     logo: {entry["logo"]},
   }}"""
@@ -563,10 +563,10 @@ def convert_positions_csv_to_js(input_dir=None, output_file=None):
 
             # Format duration
             duration = ""
-            if started_on and finished_on:
-                duration = f"{format_date(started_on)} - {format_date(finished_on)}"
-            elif started_on:
-                duration = f"{format_date(started_on)} - Present"
+            #if started_on and finished_on:
+            #    duration = f"{format_date(started_on)} - {format_date(finished_on)}"
+            #elif started_on:
+            #    duration = f"{format_date(started_on)} - Present"
 
             # Split description into content items
             content_items = []
@@ -628,7 +628,7 @@ def convert_positions_csv_to_js(input_dir=None, output_file=None):
         title: "{position["title"]}",
         duration: "{position["duration"]}",
         content: [
-{",\n".join(content_items)}
+{",".join(content_items)}
         ],
       }}"""
             positions_items.append(position_item)
@@ -638,7 +638,7 @@ def convert_positions_csv_to_js(input_dir=None, output_file=None):
     logo: {entry["logo"]},
     link: "{entry["link"]}",
     positions: [
-{",\n".join(positions_items)}
+{",".join(positions_items)}
     ],
   }}"""
         js_entries.append(js_entry)
@@ -874,7 +874,7 @@ def convert_skills_csv_to_js(input_dir=None, output_file=None):
         js_entry = f"""  {{
     title: "{category["title"]}",
     items: [
-{",\n".join(items_entries)}
+{",".join(items_entries)}
     ],
   }}"""
         js_entries.append(js_entry)
@@ -930,8 +930,8 @@ def main():
     # Convert files with provided or default paths
     convert_education_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
     convert_projects_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
-    convert_volunteering_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
-    convert_honors_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
+    #convert_volunteering_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
+    #convert_honors_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
     convert_positions_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
     convert_profile_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])
     convert_skills_csv_to_js(args.input_dir or paths['input_dir'], args.output or paths['output'])

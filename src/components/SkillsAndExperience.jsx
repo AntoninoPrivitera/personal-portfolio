@@ -61,6 +61,7 @@ const ExperienceCard = (props) => {
     <motion.div
     whileInView={{ y: [-20, 0], opacity: [0, 1] }}
     transition={{ duration: 1 }}
+    className={ "w-[100%]" }
     >
       <div className="flex flex-row items-center mb-6">
         <img
