@@ -11,6 +11,15 @@ import {
   sudoku_solver,
   event_flow_visualization_platform,
   physics_simulator,
+  anim_hiking,
+  anim_biking,
+  anim_ping_pong,
+  anim_guitar,
+  anim_experiment,
+  ielts,
+  cambridge,
+  cisco,
+  microsoft,
 } from "../assets";
 
 import {
@@ -81,6 +90,18 @@ export const navLinks = [
     title: "Extra Curricular",
   },
   */
+ {
+    id: "blog",
+    title: "Blog Posts",
+  },
+  {
+    id: "certificates",
+    title: "Certificates",
+  },
+  {
+    id: "hobbies",
+    title: "Hobbies",
+  },
   {
     id: "contactMe",
     title: "Contact Me",
@@ -582,6 +603,81 @@ export const extraCurricular = [
     logo: placeholder,
   },
 ];
+
+// List out your hobbies here
+export const hobbies = [
+  {
+    id: "hobby-1",
+    lottie_animation: anim_hiking,
+    activity: 'Hiking',
+    sentence: '“The journey of a thousand miles begins with a single step.”',
+    author: 'Lao Tzu',
+  },
+  {
+    id: "hobby-2",
+    lottie_animation: anim_guitar,
+    activity: 'Playing guitar',
+    sentence: '“We may all speak different languages, but music is a language we all understand”',
+    author: 'Yiruma',
+  },
+  {
+    id: "hobby-3",
+    lottie_animation: anim_ping_pong,
+    activity: 'Table tennis',
+    sentence:
+      '“Only passions. great passions can elevate the soul to great things.”',
+    author: 'Zhang Jike',
+  },
+  {
+    id: "hobby-4",
+    lottie_animation: anim_experiment,
+    activity: 'Experimenting new ideas',
+    sentence:
+      '“All life is an experiment. The more experiments you make the better.”',
+    author: 'Ralph Waldo Emerson',
+  },
+  {
+    id: "hobby-5",
+    lottie_animation: anim_biking,
+    activity: 'Cycling',
+    sentence:
+      '“The bicycle is a curious vehicle. Its passenger is its engine.”',
+    author: 'John Howard',
+  },
+];
+
+export const certificates = [
+  {
+    id: "certificate-1",
+    logo: ielts,
+    title: 'IELTS 6.5',
+  },
+  {
+    id: "certificate-2",
+    logo: cambridge,
+    title: 'PET-B1',
+  },
+  {
+    id: "certificate-3",
+    logo: cisco,
+    title: 'Cisco CCNA Exploration',
+  },
+  {
+    id: "certificate-6",
+    logo: cisco,
+    title: 'Cisco IT Essentials',
+  },
+  {
+    id: "certificate-4",
+    logo: microsoft,
+    title: 'Microsoft Specialist for Excel 2007',
+  },
+  {
+    id: "certificate-5",
+    logo: microsoft,
+    title: 'Microsoft Specialist for Word 2007',
+  },
+]
 
 // Links to your social media profiles
 export const socialMedia = [

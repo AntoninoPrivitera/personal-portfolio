@@ -15,6 +15,8 @@ import {
   Loading,
   Achievements,
 } from "./components";
+import Hobbies from "./components/Hobbies";
+import Certificates from "./components/Certificates";
 
 const App = () => {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -65,6 +67,8 @@ const App = () => {
               <div className={`${styles.boxWidth}`}>
                 <Projects />
                 <BlogPosts enabled={true} />
+                <Certificates />
+                <Hobbies />
                 {/* <OpenSource /> */}
                 {/* <ExtraCurricular /> */}
               </div>

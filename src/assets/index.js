@@ -53,6 +53,19 @@ import sudoku_solver from "./projects/sudoku_solver.png";
 import event_flow_visualization_platform from "./projects/event_flow_visualization_platform.jpg";
 import physics_simulator from "./projects/physics_simulator.jpg";
 
+// Certificates
+import microsoft from "./certificates/microsoft_logo.jpg";
+import cisco from "./certificates/cisco_logo.jpg";
+import ielts from "./certificates/ielts_official_logo.jpg";
+import cambridge from "./certificates/cambridgeinternational_logo.jpg";
+
+// Hobbies
+import anim_hiking from '../lotties/hiking.json'
+import anim_biking from '../lotties/biking.json'
+import anim_ping_pong from '../lotties/ping-pong.json'
+import anim_guitar from '../lotties/man-playing-a-guitar.json'
+import anim_experiment from '../lotties/experiment.json'
+
 export {
   menu,
   close,
@@ -101,5 +114,14 @@ export {
   sky_rivon,
   sudoku_solver,
   event_flow_visualization_platform,
-  physics_simulator
+  physics_simulator,
+  anim_hiking,
+  anim_biking,
+  anim_ping_pong,
+  anim_guitar,
+  anim_experiment,
+  microsoft,
+  cisco,
+  ielts,
+  cambridge
 };
