@@ -37,7 +37,8 @@ import {
   SiTypescript, SiD3Dotjs, SiScala,
   SiAdobephotoshop, SiAdobeaftereffects, SiAdobepremierepro, SiAssemblyscript, SiOpensourceinitiative,
   SiUml, SiTampermonkey, SiUnity,
-  SiWebpack, SiVite, SiJest, SiMocha, SiJenkins
+  SiWebpack, SiVite, SiJest, SiMocha, SiJenkins,
+  SiMongodb
 } from "react-icons/si";
 
 import {
@@ -56,6 +57,7 @@ import { GiPuzzle, GiBrain, GiProcessor, GiNetworkBars } from "react-icons/gi";
 import { IoGameControllerOutline } from "react-icons/io5";
 
 import { TbBrandCSharp } from "react-icons/tb";
+import { FaDartLang } from "react-icons/fa6";
 
 export const resumeLink = "";
 export const callToAction = "https://www.linkedin.com/in/concetto-antonino-privitera-79514312b/";
@@ -180,7 +182,8 @@ export const skills = [
       { id: "t-38", icon: FaPhp, name: "PHP" },
       { id: "t-57", icon: SiScala, name: "Scala" },
       { id: "t-48", icon: FaRegImage, name: "VHDL" },
-      { id: "t-42", icon: SiAssemblyscript, name: "Assembly" }
+      { id: "t-42", icon: SiAssemblyscript, name: "Assembly" },
+      { id: "t-69", icon: FaDartLang, name: "Dart" },
     ],
   },
   {
@@ -192,9 +195,7 @@ export const skills = [
       { id: "t-53", icon: FaNodeJs, name: "Node.js" },
       { id: "t-49", icon: FaHtml5, name: "HTML" },
       { id: "t-50", icon: FaCss3Alt, name: "CSS" },
-      { id: "t-56", icon: SiDotnet, name: ".NET Framework" },
       { id: "t-65", icon: SiDotnet, name: "ASP.NET" },
-      { id: "t-66", icon: SiDotnet, name: "ASP.NET Core" },
       { id: "t-43", icon: FaUnity, name: "Unity" },
       { id: "t-68", icon: SiFlutter, name: "Flutter" },
       { id: "f-3", icon: SiJquery, name: "jQuery" },
@@ -204,10 +205,11 @@ export const skills = [
     {
     title: "Database Technologies",
     items: [
-      { id: "t-44", icon: SiMysql, name: "MySQL" },
       { id: "t-10", icon: FaDatabase, name: "Vertica" },
       { id: "t-11", icon: FaDatabase, name: "SQL Server" },
       { id: "t-12", icon: FaDatabase, name: "Hive" },
+      { id: "t-13", icon: SiMongodb, name: "Mongo DB" },
+      { id: "t-44", icon: SiMysql, name: "MySQL" },
       { id: "t-30", icon: FaServer, name: "Data warehouse" }
     ],
   },
@@ -224,35 +226,8 @@ export const skills = [
     ]
   },
   {
-    title: "Software Engineering",
-    items: [
-      { id: "t-24", icon: GiNetworkBars, name: "Distributed Systems" },
-      { id: "t-25", icon: FaLayerGroup, name: "System Architecture" },
-      { id: "t-21", icon: GiPuzzle, name: "Design Patterns" },
-      { id: "t-22", icon: FaRegObjectGroup, name: "Data Structures" },
-      { id: "t-12", icon: GiBrain, name: "Algorithm Design" },
-      { id: "t-3", icon: AiFillBug, name: "Debugging" },
-      { id: "t-7", icon: FaWrench, name: "Performance Optimization" },
-      { id: "t-8", icon: FaDesktop, name: "Full-Stack Development" },
-      { id: "t-14", icon: MdDeveloperMode, name: "Cross-platform Development" },
-      { id: "t-16", icon: SiOpensourceinitiative, name: "Open-Source Contributions" },
-      { id: "t-13", icon: IoGameControllerOutline, name: "Mobile Game Development" },
-      { id: "t-54", icon: SiUml, name: "Unified Modeling Language" },
-    ]
-  },
-  {
-    title: "Visualization & UI/UX",
-    items: [
-      { id: "t-17", icon: FaChartBar, name: "Data Visualization" },
-      { id: "t-69", icon: MdDesignServices, name: "UI/UX Design" },
-      { id: "t-15", icon: IoGameControllerOutline, name: "Game Design" }
-    ]
-  },
-  {
     title: "Specialized Technologies",
     items: [
-      { id: "t-5", icon: AiOutlineMobile, name: "Augmented Reality (AR)" },
-      { id: "t-31", icon: FaBrain, name: "Machine Learning" },
       { id: "t-11", icon: GiProcessor, name: "SMT" },
       { id: "t-62", icon: FaCode, name: "Formal languages" },
       { id: "t-63", icon: GiPuzzle, name: "CUP" },
@@ -479,9 +454,7 @@ export const projects = [
       "I developed and published Sky Rivon, a free-to-play mobile game for iOS and Android where players navigate a magical sky river using simple one-finger controls. Featuring colorful fantasy visuals, dynamic river paths, hazards, power-ups, and upgrades, the game delivers quick, offline play sessions that challenge precision and decision-making.",
     stack: [
       { id: "icon-unity", icon: SiUnity, name: "Unity" },
-      { id: "icon-csharp", icon: FaHashtag, name: "C#" },
-      { id: "icon-ios", icon: FaApple, name: "iOS" },
-      { id: "icon-android", icon: FaAndroid, name: "Android" }
+      { id: "icon-csharp", icon: FaHashtag, name: "C#" }
     ],
   },
   {
@@ -493,8 +466,7 @@ export const projects = [
     content:
       "I built Sudoku Solver and Generator, a Python tool that solves puzzles using both a Z3-based SMT solver and a recursive backtracking algorithm. It generates Sudoku grids of multiple sizes by removing cells while ensuring unique solutions, and includes a command-line interface for solving, generating, and validating puzzles.",
     stack: [
-      { id: "icon-python", icon: FaPython, name: "Python" },
-      { id: "icon-cli", icon: FaHashtag, name: "CLI" }
+      { id: "icon-python", icon: FaPython, name: "Python" }
     ],
   },
   {
@@ -523,10 +495,7 @@ export const projects = [
       "I developed a Physics Simulator with Augmented Reality, an educational app that visualizes dynamic 3D models, such as astronomical bodies, to illustrate concepts like motion, rotation, and temperature in an immersive AR environment. Built with Unity and C#, the project integrates custom simulation scripts, advanced rendering effects, and Vuforia-based AR overlays, running cross-platform on Windows, macOS, and Android to enhance interactive science learning.",
     stack: [
       { id: "icon-unity", icon: SiUnity, name: "Unity" },
-      { id: "icon-csharp", icon: FaHashtag, name: "C#" },
-      { id: "icon-windows", icon: FaWindows, name: "Windows" },
-      { id: "icon-macos", icon: FaApple, name: "macOS" },
-      { id: "icon-android", icon: FaAndroid, name: "Android" }
+      { id: "icon-csharp", icon: FaHashtag, name: "C#" }
     ],
   }
 ];
@@ -694,7 +663,7 @@ export const socialMedia = [
   {
     id: "social-media-3",
     icon: AiFillMail,
-    link: "mailto:antoprivit96@gmail.com",
+    link: "mailto:ca.privitera@outlook.com",
   },
   /*{
     id: "social-media-4",
