@@ -8,6 +8,7 @@ const LottieWithVisibility = ({
   rendererSettings = { preserveAspectRatio: "xMidYMid slice" },
   style,
   threshold = 0.5,
+  className = "",
 }) => {
   const containerRef = useRef(null);
   const lottieRef = useRef();
@@ -31,13 +32,15 @@ const LottieWithVisibility = ({
   }, [threshold]);
 
   return (
-    <div ref={containerRef} style={style}>
+    <div ref={containerRef} className={className} style={style}>
       <Lottie
         ref={lottieRef}
         animationData={animationData}
         play={play}
         loop={loop}
         rendererSettings={rendererSettings}
+        className={className}
+        style={style}
       />
     </div>
   );
