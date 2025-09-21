@@ -3,6 +3,7 @@ import { educationList } from "../constants";
 import Lottie from "react-lottie-player";
 import animationData from "../lotties/quiz-mode-teal-dark.json";
 import { motion } from "framer-motion";
+import LottieWithVisibility from "./LottieWithVisibility";
 
 // lottie config
 const defaultOptions = {
@@ -69,7 +70,7 @@ const Education = () => {
       >
         <div className={layout.sectionImgReverse}>
           <div className="w-[80%] h-[80%] relative z-[5]">
-            <Lottie {...defaultOptions} />
+            <LottieWithVisibility {...defaultOptions} />
           </div>
 
           {/* gradient start */}
