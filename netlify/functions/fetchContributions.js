@@ -40,7 +40,7 @@ const parseOriginFromUrl = (url) => {
   };
 };
 
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   try {
     const { repos, username } = JSON.parse(event.body);
     
