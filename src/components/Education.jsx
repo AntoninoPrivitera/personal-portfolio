@@ -1,15 +1,14 @@
 import styles, { layout } from "../style";
 import { educationList } from "../constants";
-import Lottie from "react-lottie-player";
-import animationData from "../lotties/quiz-mode-teal-dark.json";
 import { motion } from "framer-motion";
 import LottieWithVisibility from "./LottieWithVisibility";
+import { anim_education } from "../assets";
 
 // lottie config
 const defaultOptions = {
   loop: true,
   play: true,
-  animationData: animationData,
+  animationData: anim_education,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },

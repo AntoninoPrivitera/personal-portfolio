@@ -1,16 +1,15 @@
 import styles from "../style";
 import LetsConnect from "./LetsConnect";
-import Lottie from "react-lottie-player";
-import animationData from "../lotties/person-coding.json";
 import { aboutMe } from "../constants";
 import LottieWithVisibility from "./LottieWithVisibility";
+import { anim_profile } from "../assets";
 
 
 // lottie config
 const defaultOptions = {
   loop: true,
   play: true,
-  animationData: animationData,
+  animationData: anim_profile,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },

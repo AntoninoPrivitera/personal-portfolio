@@ -4,6 +4,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import arrowUp from "./arrow-up.svg";
 import placeholder from "./placeholder.svg";
+import anim_profile from '../lotties/Coder.json'
+import anim_education from '../lotties/Book loading.json'
 
 // Experience Logos
 import criteo from "./experience_logos/criteo_logo.jpg";
@@ -42,6 +44,8 @@ export {
   profile_logo,
   profilePic,
   placeholder,
+  anim_profile,
+  anim_education,
   criteo,
   head_of_design,
   stmicroelectronics,
