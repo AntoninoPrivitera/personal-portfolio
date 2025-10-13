@@ -687,7 +687,7 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Concetto Antonino Privitera",
   githubUsername: 'AntoninoPrivitera',
-  tagLine: "Software Development Engineer II",
+  tagLine: "Senior Software Development Engineer",
   intro: "I am a full-stack software engineer with a strong passion for coding, problem-solving, and creating innovative solutions. With a solid foundation in computer science and a keen eye for detail, I thrive in dynamic environments where I can apply my skills to develop efficient and scalable applications. I am always eager to learn new technologies and stay updated with industry trends to deliver cutting-edge solutions that meet user needs.",
 };
 
