@@ -260,23 +260,33 @@ export const experiences = [
     link: "https://www.criteo.com",
     positions: [
       {
-        title: "Software Development Engineer II",
-        duration: "April 2023 - Present",
+        title: "Senior Software Development Engineer",
+        duration: "October 2025 - Present",
         content: [
           {
-            text: "Delivered high-impact and cross-functional projects",
+            text: "",
+            link: "",
+          }
+        ],
+      },
+      {
+        title: "Software Development Engineer II",
+        duration: "April 2023 - October 2025",
+        content: [
+          {
+            text: "Delivered high-priority and cross-team projects",
             link: "",
           },
           {
-            text: "Led multi-team coordination",
+            text: "Contributed to roadmap alignment",
             link: "",
           },
           {
-            text: "Improved API performance through advanced API features",
+            text: "Served as interim team leads",
             link: "",
           },
           {
-            text: "Served as interim team lead and Scrum Master, organizing sprints and optimizing processes",
+            text: "Served as Scrum Master to setup sprints and improve team productivity",
             link: "",
           },
           {
@@ -289,10 +299,6 @@ export const experiences = [
           },
           {
             text: "Developed JIRA Task Flow Visualizer open-source tool and posted Medium article",
-            link: "",
-          },
-          {
-            text: "Contributed to strategic planning and roadmap alignment with business goals",
             link: "",
           }
         ],
@@ -322,7 +328,7 @@ export const experiences = [
           }
         ],
       }, {
-        title: "Software Engineer",
+        title: "Intern Software Development Engineer",
         duration: "March 2021 - August 2021",
         content: [
           {
